@@ -1,0 +1,98 @@
+[gd_scene format=3 uid="uid://dta1s3b4kpyle"]
+
+[ext_resource type="Script" uid="uid://gjfcv2ux64ic" path="res://script/player.gd" id="1_hjaqi"]
+[ext_resource type="Texture2D" uid="uid://c6ub3et71wydu" path="res://aseets/pelari.png" id="2_fvtld"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_txmk2"]
+atlas = ExtResource("2_fvtld")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w4qq1"]
+atlas = ExtResource("2_fvtld")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m5mgf"]
+atlas = ExtResource("2_fvtld")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_emkrx"]
+atlas = ExtResource("2_fvtld")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0tg4p"]
+atlas = ExtResource("2_fvtld")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hcb8y"]
+atlas = ExtResource("2_fvtld")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ct4mp"]
+atlas = ExtResource("2_fvtld")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s4jxa"]
+atlas = ExtResource("2_fvtld")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ifbj3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_txmk2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w4qq1")
+}],
+"loop": 1,
+"name": &"run_back",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m5mgf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_emkrx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0tg4p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hcb8y")
+}],
+"loop": 1,
+"name": &"run_front",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ct4mp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s4jxa")
+}],
+"loop": 1,
+"name": &"run_right",
+"speed": 5.0
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bhw8c"]
+size = Vector3(1, 1.9448242, 0.21289063)
+
+[node name="player" type="CharacterBody3D" unique_id=1492406720]
+script = ExtResource("1_hjaqi")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=546551059]
+transform = Transform3D(6.445, 0, 0, 0, 6.445, 0, 0, 0, 6.445, 0, 0, 0)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_ifbj3")
+animation = &"run_back"
+frame_progress = 0.75330144
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1886760766]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.02368164, 0.001953125)
+shape = SubResource("BoxShape3D_bhw8c")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=661773265]
+transform = Transform3D(1, 0, 0, 0, 0.85912395, 0.51176757, 0, -0.51176757, 0.85912395, 0, 1.7126756, 1.726219)
