@@ -1,22 +1,97 @@
 [gd_scene format=3 uid="uid://cs6ggtfr4ptvt"]
 
 [ext_resource type="PackedScene" uid="uid://dta1s3b4kpyle" path="res://scene/player.tscn" id="1_pjass"]
+[ext_resource type="Texture2D" uid="uid://dsdc0ubtehkcj" path="res://aseets/land_0003.png" id="2_w4qq1"]
+[ext_resource type="Texture2D" uid="uid://cjfff7qrcesox" path="res://aseets/pagar.png" id="3_m5mgf"]
+[ext_resource type="Texture2D" uid="uid://br7xxqpgxpvxr" path="res://aseets/peringkat.png" id="4_hcb8y"]
+[ext_resource type="Texture2D" uid="uid://d1t5faebyafsj" path="res://aseets/pohon.png" id="4_m5mgf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_emkrx"]
+albedo_texture = ExtResource("2_w4qq1")
+uv1_scale = Vector3(200, 200, 200)
+texture_filter = 0
 
 [sub_resource type="BoxMesh" id="BoxMesh_ifbj3"]
-size = Vector3(10.41, 1, 9.285)
+size = Vector3(195.6616, 1, 184.35054)
 
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_pjass"]
-data = PackedVector3Array(-5.205, 0.5, 4.6425, 5.205, 0.5, 4.6425, -5.205, -0.5, 4.6425, 5.205, 0.5, 4.6425, 5.205, -0.5, 4.6425, -5.205, -0.5, 4.6425, 5.205, 0.5, -4.6425, -5.205, 0.5, -4.6425, 5.205, -0.5, -4.6425, -5.205, 0.5, -4.6425, -5.205, -0.5, -4.6425, 5.205, -0.5, -4.6425, 5.205, 0.5, 4.6425, 5.205, 0.5, -4.6425, 5.205, -0.5, 4.6425, 5.205, 0.5, -4.6425, 5.205, -0.5, -4.6425, 5.205, -0.5, 4.6425, -5.205, 0.5, -4.6425, -5.205, 0.5, 4.6425, -5.205, -0.5, -4.6425, -5.205, 0.5, 4.6425, -5.205, -0.5, 4.6425, -5.205, -0.5, -4.6425, 5.205, 0.5, 4.6425, -5.205, 0.5, 4.6425, 5.205, 0.5, -4.6425, -5.205, 0.5, 4.6425, -5.205, 0.5, -4.6425, 5.205, 0.5, -4.6425, -5.205, -0.5, 4.6425, 5.205, -0.5, 4.6425, -5.205, -0.5, -4.6425, 5.205, -0.5, 4.6425, 5.205, -0.5, -4.6425, -5.205, -0.5, -4.6425)
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_w4qq1"]
+data = PackedVector3Array(-97.830795, 0.5, 92.1753, 97.830795, 0.5, 92.1753, -97.830795, -0.5, 92.1753, 97.830795, 0.5, 92.1753, 97.830795, -0.5, 92.1753, -97.830795, -0.5, 92.1753, 97.830795, 0.5, -92.1753, -97.830795, 0.5, -92.1753, 97.830795, -0.5, -92.1753, -97.830795, 0.5, -92.1753, -97.830795, -0.5, -92.1753, 97.830795, -0.5, -92.1753, 97.830795, 0.5, 92.1753, 97.830795, 0.5, -92.1753, 97.830795, -0.5, 92.1753, 97.830795, 0.5, -92.1753, 97.830795, -0.5, -92.1753, 97.830795, -0.5, 92.1753, -97.830795, 0.5, -92.1753, -97.830795, 0.5, 92.1753, -97.830795, -0.5, -92.1753, -97.830795, 0.5, 92.1753, -97.830795, -0.5, 92.1753, -97.830795, -0.5, -92.1753, 97.830795, 0.5, 92.1753, -97.830795, 0.5, 92.1753, 97.830795, 0.5, -92.1753, -97.830795, 0.5, 92.1753, -97.830795, 0.5, -92.1753, 97.830795, 0.5, -92.1753, -97.830795, -0.5, 92.1753, 97.830795, -0.5, 92.1753, -97.830795, -0.5, -92.1753, 97.830795, -0.5, 92.1753, 97.830795, -0.5, -92.1753, -97.830795, -0.5, -92.1753)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_emkrx"]
+atlas = ExtResource("4_m5mgf")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0tg4p"]
+atlas = ExtResource("4_m5mgf")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hcb8y"]
+atlas = ExtResource("4_m5mgf")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y3jn2"]
+atlas = ExtResource("4_m5mgf")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yur6x"]
+atlas = ExtResource("4_m5mgf")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ifbj3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_emkrx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0tg4p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hcb8y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y3jn2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yur6x")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 1.5
+}]
 
 [node name="world" type="Node3D" unique_id=1778774369]
 
 [node name="player" parent="." unique_id=1492406720 instance=ExtResource("1_pjass")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.42144027, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=163722433]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.7802718, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0099869, -1.7802718, -24.550339)
+material_override = SubResource("StandardMaterial3D_emkrx")
 mesh = SubResource("BoxMesh_ifbj3")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D" unique_id=254658819]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D" unique_id=438304334]
-shape = SubResource("ConcavePolygonShape3D_pjass")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D" unique_id=772668071]
+shape = SubResource("ConcavePolygonShape3D_w4qq1")
+
+[node name="object" type="Node3D" parent="." unique_id=1467651417]
+
+[node name="pagar" type="Sprite3D" parent="object" unique_id=1349417135]
+transform = Transform3D(6.99, 0, 0, 0, 6.99, 0, 0, 0, 6.99, 1.7439553, -0.72340626, 0)
+texture_filter = 0
+texture = ExtResource("3_m5mgf")
+
+[node name="peringkat" type="Sprite3D" parent="object" unique_id=477650813]
+transform = Transform3D(6.99, 0, 0, 0, 6.99, 0, 0, 0, 6.99, 1.7439553, -0.72340626, 0)
+texture_filter = 0
+texture = ExtResource("4_hcb8y")
+
+[node name="pohonkelapa" type="AnimatedSprite3D" parent="object" unique_id=469029065]
+transform = Transform3D(8.84, 0, 0, 0, 8.84, 0, 0, 0, 8.84, 4.7764945, 0.9006262, -2.5698757)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_ifbj3")
+frame_progress = 0.017608726
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=266733156]
+transform = Transform3D(1, 0, 0, 0, 0.71161664, 0.70256805, 0, -0.70256805, 0.71161664, 0, 22.41703, 25.864407)

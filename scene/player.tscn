@@ -95,4 +95,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.02368164, 0.001953125)
 shape = SubResource("BoxShape3D_bhw8c")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=661773265]
-transform = Transform3D(1, 0, 0, 0, 0.85912395, 0.51176757, 0, -0.51176757, 0.85912395, 0, 1.7126756, 1.726219)
+transform = Transform3D(1, 0, 0, 0, 0.85912395, 0.51176757, 0, -0.51176757, 0.85912395, 2.0415928, 3.1099813, 3.4515471)
