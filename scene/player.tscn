@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dta1s3b4kpyle"]
 
 [ext_resource type="Script" uid="uid://gjfcv2ux64ic" path="res://script/player.gd" id="1_hjaqi"]
-[ext_resource type="Texture2D" uid="uid://c6ub3et71wydu" path="res://aseets/pelari.png" id="2_fvtld"]
+[ext_resource type="Texture2D" uid="uid://c6ub3et71wydu" path="res://aseets/Sprites/pelari.png" id="2_fvtld"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_txmk2"]
 atlas = ExtResource("2_fvtld")
@@ -87,8 +87,8 @@ script = ExtResource("1_hjaqi")
 transform = Transform3D(6.445, 0, 0, 0, 6.445, 0, 0, 0, 6.445, 0, 0, 0)
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_ifbj3")
-animation = &"run_back"
-frame_progress = 0.75330144
+animation = &"run_right"
+frame_progress = 0.27464932
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1886760766]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.02368164, 0.001953125)

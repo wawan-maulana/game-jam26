@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://vs7kkgemlxgc"]
+
+[ext_resource type="Texture2D" uid="uid://c0gkv236tnlpn" path="res://aseets/Sprites/OBSTEKEL POHON.png" id="1_d04xm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gwcng"]
+size = Vector3(0.94098204, 0.29684862, 0.054367065)
+
+[node name="FallingTree" type="Node3D" unique_id=506127259]
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=847802977]
+transform = Transform3D(-0.0044704964, -0.99999, 0, 0.99999, -0.0044704964, 0, 0, 0, 1, 0, 0.29162169, 0)
+texture_filter = 0
+texture = ExtResource("1_d04xm")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1699156925]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00927043, 0.30833244, -0.0065734386)
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1136082756]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0105238855, -0.015488982, 0.008612037)
+shape = SubResource("BoxShape3D_gwcng")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=178458620]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=733982531]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.019794315, 0.29284346, 0.002038598)
+shape = SubResource("BoxShape3D_gwcng")
