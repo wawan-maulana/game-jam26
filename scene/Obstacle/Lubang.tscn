@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://crh320wjwyxn"]
+
+[ext_resource type="Texture2D" uid="uid://c8s561st4dsnw" path="res://aseets/Sprites/Lubang (2).png" id="1_rypnk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gwcng"]
+size = Vector3(0.32559204, 0.036346436, 0.32629395)
+
+[node name="Lubang" type="Node3D" unique_id=476109954]
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=106470514]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0064789057, 0.011336401, 0.017885417)
+pixel_size = 0.015
+axis = 1
+texture_filter = 2
+texture = ExtResource("1_rypnk")
+
+[node name="Area3D" type="Area3D" parent="Sprite3D" unique_id=2140522639]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sprite3D/Area3D" unique_id=649238267]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.007461548, 0.014633164, -0.03314209)
+shape = SubResource("BoxShape3D_gwcng")
