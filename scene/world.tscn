@@ -161,7 +161,7 @@ transform = Transform3D(8.84, 0, 0, 0, 8.84, 0, 0, 0, 8.84, 4.7764945, 0.9006262
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_ifbj3")
 autoplay = "default"
-frame_progress = 0.06823763
+frame_progress = 0.6650943
 
 [node name="pohonkelapa2" type="AnimatedSprite3D" parent="object" unique_id=1788490352]
 transform = Transform3D(8.84, 0, 0, 0, 8.84, 0, 0, 0, 8.84, 16.09111, 0.9006262, -2.5698757)
