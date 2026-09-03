@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://dta1s3b4kpyle" path="res://scene/player.tscn" id="1_pjass"]
 [ext_resource type="Texture2D" uid="uid://dsdc0ubtehkcj" path="res://aseets/land_0003.png" id="2_w4qq1"]
 [ext_resource type="Texture2D" uid="uid://cjfff7qrcesox" path="res://aseets/pagar.png" id="3_m5mgf"]
+[ext_resource type="Texture2D" uid="uid://boir7xl5dk8y1" path="res://aseets/tempatlari.png" id="4_0tg4p"]
 [ext_resource type="Texture2D" uid="uid://br7xxqpgxpvxr" path="res://aseets/peringkat.png" id="4_hcb8y"]
 [ext_resource type="Texture2D" uid="uid://d1t5faebyafsj" path="res://aseets/pohon.png" id="4_m5mgf"]
 
@@ -67,6 +68,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.42144027, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=163722433]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0099869, -1.7802718, -24.550339)
+visible = false
 material_override = SubResource("StandardMaterial3D_emkrx")
 mesh = SubResource("BoxMesh_ifbj3")
 
@@ -78,12 +80,27 @@ shape = SubResource("ConcavePolygonShape3D_w4qq1")
 [node name="object" type="Node3D" parent="." unique_id=1467651417]
 
 [node name="pagar" type="Sprite3D" parent="object" unique_id=1349417135]
-transform = Transform3D(6.99, 0, 0, 0, 6.99, 0, 0, 0, 6.99, 1.7439553, -0.72340626, 0)
+transform = Transform3D(-0.6749472, 0, -6.9573374, 0, 6.99, 0, 6.9573374, 0, -0.6749472, 1.7439553, -0.5733904, 1.0199418)
+texture_filter = 0
+texture = ExtResource("3_m5mgf")
+
+[node name="tempatlari" type="Sprite3D" parent="object" unique_id=441939025]
+transform = Transform3D(-6.989999, -6.110851e-07, 2.6711382e-14, 0, -3.0554256e-07, -6.99, 6.110851e-07, -6.989999, 3.0554259e-07, -13.937878, -1.2667606, 3.305056)
+texture_filter = 0
+texture = ExtResource("4_0tg4p")
+
+[node name="pagar2" type="Sprite3D" parent="object" unique_id=426140324]
+transform = Transform3D(-0.6749472, 0, -6.9573374, 0, 6.99, 0, 6.9573374, 0, -0.6749472, 9.313875, -0.3774833, 1.0199418)
+texture_filter = 0
+texture = ExtResource("3_m5mgf")
+
+[node name="pagar3" type="Sprite3D" parent="object" unique_id=913582489]
+transform = Transform3D(-0.6749472, 0, -6.9573374, 0, 6.99, 0, 6.9573374, 0, -0.6749472, 22.306547, -0.72340626, 1.0199418)
 texture_filter = 0
 texture = ExtResource("3_m5mgf")
 
 [node name="peringkat" type="Sprite3D" parent="object" unique_id=477650813]
-transform = Transform3D(6.99, 0, 0, 0, 6.99, 0, 0, 0, 6.99, 1.7439553, -0.72340626, 0)
+transform = Transform3D(6.99, 0, 0, 0, 6.99, 0, 0, 0, 6.99, -3.1757784, -0.54638904, 0.06441212)
 texture_filter = 0
 texture = ExtResource("4_hcb8y")
 
@@ -91,6 +108,14 @@ texture = ExtResource("4_hcb8y")
 transform = Transform3D(8.84, 0, 0, 0, 8.84, 0, 0, 0, 8.84, 4.7764945, 0.9006262, -2.5698757)
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_ifbj3")
+autoplay = "default"
+frame_progress = 0.017608726
+
+[node name="pohonkelapa2" type="AnimatedSprite3D" parent="object" unique_id=1788490352]
+transform = Transform3D(8.84, 0, 0, 0, 8.84, 0, 0, 0, 8.84, 16.09111, 0.9006262, -2.5698757)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_ifbj3")
+autoplay = "default"
 frame_progress = 0.017608726
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=266733156]
