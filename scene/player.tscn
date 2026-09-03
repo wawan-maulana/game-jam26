@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://gjfcv2ux64ic" path="res://script/player.gd" id="1_hjaqi"]
 [ext_resource type="Texture2D" uid="uid://c6ub3et71wydu" path="res://aseets/Sprites/pelari.png" id="2_fvtld"]
+[ext_resource type="AudioStream" uid="uid://qnxwn20kobc8" path="res://aseets/music/lumora_studios-pixel-jump-319167.mp3" id="3_fvtld"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_txmk2"]
 atlas = ExtResource("2_fvtld")
@@ -96,3 +97,7 @@ shape = SubResource("BoxShape3D_bhw8c")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=661773265]
 transform = Transform3D(1, 0, 0, 0, 0.7375337, 0.6753104, 0, -0.6753104, 0.7375337, 2.0415928, 3.0515788, 3.4515471)
+
+[node name="latar" type="AudioStreamPlayer3D" parent="." unique_id=600902026]
+stream = ExtResource("3_fvtld")
+autoplay = true

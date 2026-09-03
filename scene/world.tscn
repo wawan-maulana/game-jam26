@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://c4ggdp0kg5wjk" path="res://addons/simplegrasstextured/textures/grassbushcc008.png" id="10_f345f"]
 [ext_resource type="ArrayMesh" uid="uid://sptcpdx6wtm8" path="res://addons/simplegrasstextured/default_mesh.tres" id="11_bqa5m"]
 [ext_resource type="Script" uid="uid://2juaclm8gc1n" path="res://addons/simplegrasstextured/grass.gd" id="12_a0bac"]
+[ext_resource type="AudioStream" uid="uid://jsncshu353d6" path="res://aseets/music/freesound_community-pixel-song-17-60937.mp3" id="13_f345f"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_emkrx"]
 albedo_texture = ExtResource("2_w4qq1")
@@ -80,7 +81,7 @@ texture_filter = 0
 [sub_resource type="BoxMesh" id="BoxMesh_bhw8c"]
 size = Vector3(640.4878, 1, 6.2165527)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_tmyho"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_f345f"]
 render_priority = 0
 shader = ExtResource("9_jsnws")
 shader_parameter/albedo = Color(1, 1, 1, 1)
@@ -161,7 +162,7 @@ transform = Transform3D(8.84, 0, 0, 0, 8.84, 0, 0, 0, 8.84, 4.7764945, 0.9006262
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_ifbj3")
 autoplay = "default"
-frame_progress = 0.6650943
+frame_progress = 0.12162012
 
 [node name="pohonkelapa2" type="AnimatedSprite3D" parent="object" unique_id=1788490352]
 transform = Transform3D(8.84, 0, 0, 0, 8.84, 0, 0, 0, 8.84, 16.09111, 0.9006262, -2.5698757)
@@ -221,7 +222,7 @@ material_override = SubResource("StandardMaterial3D_yur6x")
 mesh = SubResource("BoxMesh_bhw8c")
 
 [node name="SimpleGrassTextured" type="MultiMeshInstance3D" parent="." unique_id=1932572455]
-material_override = SubResource("ShaderMaterial_tmyho")
+material_override = SubResource("ShaderMaterial_f345f")
 multimesh = SubResource("MultiMesh_hnm4a")
 script = ExtResource("12_a0bac")
 sgt_radius = 2.0
@@ -239,3 +240,10 @@ sgt_tool_shape = {
 }
 metadata/_custom_type_script = "uid://2juaclm8gc1n"
 metadata/SimpleGrassTextured = "2.0.5"
+
+[node name="sound" type="Node3D" parent="." unique_id=1206555557]
+
+[node name="latar" type="AudioStreamPlayer3D" parent="sound" unique_id=1992042926]
+stream = ExtResource("13_f345f")
+volume_db = 26.916
+autoplay = true

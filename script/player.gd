@@ -5,6 +5,7 @@ const SPEED = 5.0
 const JUMP_VELOCITY = 7.0
 const GRAVITY_MULTIPLIER = 2.0 # Adjust this to make gravity stronger (e.g., 2.0, 3.0)
 @onready var animated_sprite_3d: AnimatedSprite3D = $AnimatedSprite3D
+@onready var latar: AudioStreamPlayer3D = $latar
 
 
 func _physics_process(delta: float) -> void:
@@ -16,9 +17,10 @@ func _physics_process(delta: float) -> void:
 	# Handle jump.
 	if Input.is_action_just_pressed("lompat") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
+		latar.play()
 
 	# Get input for up/down, and force rightward movement for x
-	var input_dir := Input.get_vector("kiri", "kanan", "ata", "bawah")
+	var input_dir := Input.get_vector("kiri", "kanan", "atas", "bawah")
 	input_dir.x = max(1.0, input_dir.x) # Automatically forces the character to move right (or faster if right is pressed)
 	
 	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
