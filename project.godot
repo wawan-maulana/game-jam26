@@ -42,6 +42,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 SimpleGrass="*uid://bfq0snth8sj3h"
+CanvasLayerGlobal="*uid://cvk1r41aw86ti"
 
 [display]
 

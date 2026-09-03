@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cvk1r41aw86ti"]
+
+[ext_resource type="Shader" uid="uid://o3doe1w8hltv" path="res://shader/new_shader.gdshader" id="1_xp8f4"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ifbj3"]
+shader = ExtResource("1_xp8f4")
+shader_parameter/resolution = Vector2(320, 180)
+shader_parameter/scan_line_amount = 0.5
+shader_parameter/warp_amount = 0.05
+shader_parameter/vignette_amount = 0.5
+shader_parameter/vignette_intensity = 0.3
+shader_parameter/grille_amount = 0.05
+shader_parameter/brightness_boost = 1.2
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=710013867]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=823289507]
+material = SubResource("ShaderMaterial_ifbj3")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
