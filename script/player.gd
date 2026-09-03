@@ -2,15 +2,16 @@ extends CharacterBody3D
 
 
 const SPEED = 5.0
-const JUMP_VELOCITY = 4.5
+const JUMP_VELOCITY = 7.0
+const GRAVITY_MULTIPLIER = 2.0 # Adjust this to make gravity stronger (e.g., 2.0, 3.0)
 @onready var animated_sprite_3d: AnimatedSprite3D = $AnimatedSprite3D
 
 
 func _physics_process(delta: float) -> void:
 	
-	# Add the gravity.
+	# Add the gravity with a multiplier to make it heavier/snappier
 	if not is_on_floor():
-		velocity += get_gravity() * delta
+		velocity += get_gravity() * GRAVITY_MULTIPLIER * delta
 
 	# Handle jump.
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
