@@ -84,7 +84,7 @@ texture_filter = 0
 [sub_resource type="BoxMesh" id="BoxMesh_bhw8c"]
 size = Vector3(640.4878, 1, 6.2165527)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_hnm4a"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tmyho"]
 render_priority = 0
 shader = ExtResource("9_jsnws")
 shader_parameter/albedo = Color(1, 1, 1, 1)
@@ -141,28 +141,28 @@ texture_filter = 0
 texture = ExtResource("4_0tg4p")
 
 [node name="pagar2" parent="object" unique_id=917225040 instance=ExtResource("5_bqa5m")]
-transform = Transform3D(-0.6749472, 0, -6.9573374, 0, 6.99, 0, 6.9573374, 0, -0.6749472, 9.313875, -0.3774833, 1.0199418)
+transform = Transform3D(-0.6749472, 0, -6.9573374, 0, 6.99, 0, 6.9573374, 0, -0.6749472, 9.313875, -0.7295422, 1.0199418)
 
 [node name="pagar3" parent="object" unique_id=322005382 instance=ExtResource("5_bqa5m")]
-transform = Transform3D(-0.6749472, 0, -6.9573374, 0, 6.99, 0, 6.9573374, 0, -0.6749472, 9.313875, -0.3774833, 3.2963548)
+transform = Transform3D(-0.6749472, 0, -6.9573374, 0, 6.99, 0, 6.9573374, 0, -0.6749472, 9.313875, -0.7295422, 3.2963548)
 
 [node name="pagar5" parent="object" unique_id=700174766 instance=ExtResource("5_bqa5m")]
-transform = Transform3D(-0.6749472, 0, -6.9573374, 0, 6.99, 0, 6.9573374, 0, -0.6749472, 15.583051, -0.3774833, 3.2963548)
+transform = Transform3D(-0.6749472, 0, -6.9573374, 0, 6.99, 0, 6.9573374, 0, -0.6749472, 15.583051, -0.7295422, 3.2963548)
 
 [node name="pagar6" parent="object" unique_id=354684160 instance=ExtResource("5_bqa5m")]
-transform = Transform3D(-0.6749472, 0, -6.9573374, 0, 6.99, 0, 6.9573374, 0, -0.6749472, 15.583051, -0.3774833, 4.901913)
+transform = Transform3D(-0.6749472, 0, -6.9573374, 0, 6.99, 0, 6.9573374, 0, -0.6749472, 15.583051, -0.7295422, 4.901913)
 
 [node name="pagar7" parent="object" unique_id=477085999 instance=ExtResource("5_bqa5m")]
-transform = Transform3D(-0.6749472, 0, -6.9573374, 0, 6.99, 0, 6.9573374, 0, -0.6749472, 21.213047, -0.3774833, 4.901913)
+transform = Transform3D(-0.6749472, 0, -6.9573374, 0, 6.99, 0, 6.9573374, 0, -0.6749472, 21.213047, -0.7295422, 4.901913)
 
 [node name="pagar8" parent="object" unique_id=396314878 instance=ExtResource("5_bqa5m")]
-transform = Transform3D(-0.6749472, 0, -6.9573374, 0, 6.99, 0, 6.9573374, 0, -0.6749472, 21.213047, -0.3774833, 3.0590944)
+transform = Transform3D(-0.6749472, 0, -6.9573374, 0, 6.99, 0, 6.9573374, 0, -0.6749472, 21.213047, -0.7295422, 3.0590944)
 
 [node name="pagar9" parent="object" unique_id=252633059 instance=ExtResource("5_bqa5m")]
-transform = Transform3D(-0.6749472, 0, -6.9573374, 0, 6.99, 0, 6.9573374, 0, -0.6749472, 21.213047, -0.3774833, 1.1922472)
+transform = Transform3D(-0.6749472, 0, -6.9573374, 0, 6.99, 0, 6.9573374, 0, -0.6749472, 21.213047, -0.7295422, 1.1922472)
 
 [node name="pagar4" parent="object" unique_id=1966738527 instance=ExtResource("5_bqa5m")]
-transform = Transform3D(-0.6749472, 0, -6.9573374, 0, 6.99, 0, 6.9573374, 0, -0.6749472, 1.7664742, -0.3774833, 1.0199418)
+transform = Transform3D(-0.6749472, 0, -6.9573374, 0, 6.99, 0, 6.9573374, 0, -0.6749472, 1.7664742, -0.7295422, 1.0199418)
 
 [node name="peringkat" type="Sprite3D" parent="object" unique_id=477650813]
 transform = Transform3D(6.99, 0, 0, 0, 6.99, 0, 0, 0, 6.99, -3.1757784, -0.54638904, 0.06441212)
@@ -176,6 +176,13 @@ sprite_frames = SubResource("SpriteFrames_ifbj3")
 autoplay = "default"
 frame_progress = 0.12162012
 
+[node name="pohonkelapa3" type="AnimatedSprite3D" parent="object" unique_id=1522132883]
+transform = Transform3D(8.84, 0, 0, 0, 8.84, 0, 0, 0, 8.84, 6.6099696, 0.9006262, -8.5244465)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_ifbj3")
+autoplay = "default"
+frame_progress = 0.12162012
+
 [node name="pohonkelapa2" type="AnimatedSprite3D" parent="object" unique_id=1788490352]
 transform = Transform3D(8.84, 0, 0, 0, 8.84, 0, 0, 0, 8.84, 16.09111, 0.9006262, -2.5698757)
 texture_filter = 0
@@ -184,62 +191,74 @@ autoplay = "default"
 frame_progress = 0.017608726
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=266733156]
-transform = Transform3D(1, 0, 0, 0, 0.71161664, 0.70256805, 0, -0.70256805, 0.71161664, 0, 22.41703, 25.864407)
+transform = Transform3D(0.8001687, 0.42138276, -0.42680988, 0, 0.71161664, 0.70256805, 0.599775, -0.56217295, 0.56941336, -57.348915, 22.41703, 25.864407)
+shadow_enabled = true
 
 [node name="RUMAH" type="Node3D" parent="." unique_id=1151684741]
 
 [node name="Sprite3D" type="Sprite3D" parent="RUMAH" unique_id=2119344449]
 transform = Transform3D(10.865, 0, 0, 0, 10.865, 0, 0, 0, 10.865, 0, 1, -6)
+alpha_cut = 1
 texture_filter = 0
 texture = ExtResource("7_hcb8y")
 
 [node name="Sprite3D6" type="Sprite3D" parent="RUMAH" unique_id=1069068388]
 transform = Transform3D(10.865, 0, 0, 0, 10.865, 0, 0, 0, 10.865, 9.593749, 1, -10.764317)
+alpha_cut = 1
 texture_filter = 0
 texture = ExtResource("8_bqa5m")
 
 [node name="Sprite3D7" type="Sprite3D" parent="RUMAH" unique_id=1286074512]
 transform = Transform3D(10.865, 0, 0, 0, 10.865, 0, 0, 0, 10.865, 31.09719, 1, -10.764317)
+alpha_cut = 1
 texture_filter = 0
 texture = ExtResource("8_bqa5m")
 
 [node name="Sprite3D8" type="Sprite3D" parent="RUMAH" unique_id=1605422645]
 transform = Transform3D(10.865, 0, 0, 0, 10.865, 0, 0, 0, 10.865, 55.712475, 1, -10.764317)
+alpha_cut = 1
 texture_filter = 0
 texture = ExtResource("8_bqa5m")
 
 [node name="Sprite3D9" type="Sprite3D" parent="RUMAH" unique_id=2082372868]
 transform = Transform3D(10.865, 0, 0, 0, 10.865, 0, 0, 0, 10.865, 19.569096, 1, -15.297005)
+alpha_cut = 1
 texture_filter = 0
 texture = ExtResource("9_a0bac")
 
 [node name="Sprite3D11" type="Sprite3D" parent="RUMAH" unique_id=1174393959]
 transform = Transform3D(10.865, 0, 0, 0, 10.865, 0, 0, 0, 10.865, 41.384216, 1, -14.765084)
+alpha_cut = 1
 texture_filter = 0
 texture = ExtResource("9_a0bac")
 
 [node name="Sprite3D10" type="Sprite3D" parent="RUMAH" unique_id=1681503846]
 transform = Transform3D(10.865, 0, 0, 0, 10.865, 0, 0, 0, 10.865, -6.2001877, 1, -9.379978)
+alpha_cut = 1
 texture_filter = 0
 texture = ExtResource("9_a0bac")
 
 [node name="Sprite3D2" type="Sprite3D" parent="RUMAH" unique_id=430388488]
 transform = Transform3D(10.865, 0, 0, 0, 10.865, 0, 0, 0, 10.865, 18.11686, 1, -6)
+alpha_cut = 1
 texture_filter = 0
 texture = ExtResource("7_hcb8y")
 
 [node name="Sprite3D3" type="Sprite3D" parent="RUMAH" unique_id=1561975915]
 transform = Transform3D(10.865, 0, 0, 0, 10.865, 0, 0, 0, 10.865, 44.589283, 1, -6)
+alpha_cut = 1
 texture_filter = 0
 texture = ExtResource("7_hcb8y")
 
 [node name="Sprite3D4" type="Sprite3D" parent="RUMAH" unique_id=1856919740]
 transform = Transform3D(10.865, 0, 0, 0, 10.865, 0, 0, 0, 10.865, -18.626411, 1, -6)
+alpha_cut = 1
 texture_filter = 0
 texture = ExtResource("7_hcb8y")
 
 [node name="Sprite3D5" type="Sprite3D" parent="RUMAH" unique_id=1116680136]
 transform = Transform3D(10.865, 0, 0, 0, 10.865, 0, 0, 0, 10.865, -28.840452, 1, -6)
+alpha_cut = 1
 texture_filter = 0
 texture = ExtResource("7_hcb8y")
 
@@ -261,7 +280,7 @@ material_override = SubResource("StandardMaterial3D_yur6x")
 mesh = SubResource("BoxMesh_bhw8c")
 
 [node name="SimpleGrassTextured" type="MultiMeshInstance3D" parent="." unique_id=1932572455]
-material_override = SubResource("ShaderMaterial_hnm4a")
+material_override = SubResource("ShaderMaterial_tmyho")
 multimesh = SubResource("MultiMesh_hnm4a")
 script = ExtResource("12_a0bac")
 sgt_radius = 2.0

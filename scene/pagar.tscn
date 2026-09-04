@@ -9,6 +9,8 @@ size = Vector3(0.23718262, 0.084503174, 0.012054443)
 
 [node name="pagar2" type="Sprite3D" unique_id=917225040]
 transform = Transform3D(-0.6749472, 0, -6.9573374, 0, 6.99, 0, 6.9573374, 0, -0.6749472, 0, 0, 0)
+shaded = true
+alpha_cut = 1
 texture_filter = 0
 texture = ExtResource("1_mv2cy")
 script = ExtResource("2_gn38h")
