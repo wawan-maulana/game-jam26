@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://drtohg0o1s783"]
+
+[ext_resource type="Texture2D" uid="uid://y348coiro71t" path="res://aseets/Animate Ibu Kos.png" id="1_q240d"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eiksv"]
+atlas = ExtResource("1_q240d")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ytk8f"]
+atlas = ExtResource("1_q240d")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oslyt"]
+atlas = ExtResource("1_q240d")
+region = Rect2(512, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ulbn7"]
+atlas = ExtResource("1_q240d")
+region = Rect2(768, 0, 256, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gwcng"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eiksv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ytk8f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oslyt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ulbn7")
+}],
+"loop": 1,
+"name": &"Idle",
+"speed": 10.0
+}]
+
+[node name="IbuKos" type="Node3D" unique_id=1798254846]
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=1015387567]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.84145474, 0)
+sprite_frames = SubResource("SpriteFrames_gwcng")
+animation = &"Idle"
