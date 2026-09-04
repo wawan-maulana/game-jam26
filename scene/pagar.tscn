@@ -5,7 +5,7 @@
 [ext_resource type="AudioStream" uid="uid://b0sbrsmjvdfel" path="res://aseets/music/mati.mp3" id="3_ksn5p"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ifbj3"]
-size = Vector3(0.23718262, 0.14752197, 0.048217773)
+size = Vector3(0.23718262, 0.084503174, 0.012054443)
 
 [node name="pagar2" type="Sprite3D" unique_id=917225040]
 transform = Transform3D(-0.6749472, 0, -6.9573374, 0, 6.99, 0, 6.9573374, 0, -0.6749472, 0, 0, 0)
@@ -16,7 +16,7 @@ script = ExtResource("2_gn38h")
 [node name="Area3D" type="Area3D" parent="." unique_id=1616870484]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=703811983]
-transform = Transform3D(0.99999976, 0, -1.4901161e-08, 0, 1.0000002, 0, 1.4901161e-08, 0, 0.99999976, -0.06451411, -0.07138069, 0.03570552)
+transform = Transform3D(0.99999976, 0, -1.4901161e-08, 0, 1.0000002, 0, 1.4901161e-08, 0, 0.99999976, -0.06723403, -0.039871324, -0.00095297676)
 shape = SubResource("BoxShape3D_ifbj3")
 
 [node name="latar" type="AudioStreamPlayer3D" parent="." unique_id=841490999]

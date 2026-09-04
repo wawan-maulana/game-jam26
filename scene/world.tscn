@@ -7,12 +7,15 @@
 [ext_resource type="Texture2D" uid="uid://d1t5faebyafsj" path="res://aseets/pohon.png" id="4_m5mgf"]
 [ext_resource type="PackedScene" uid="uid://bjlksjxlcesik" path="res://scene/pagar.tscn" id="5_bqa5m"]
 [ext_resource type="Texture2D" uid="uid://bcsu44lsp3nda" path="res://aseets/Sprites/Rumah/Rumah  merah.png" id="7_hcb8y"]
+[ext_resource type="Texture2D" uid="uid://d525y6tn813b" path="res://aseets/Sprites/Rumah/Rumah biru.png" id="8_bqa5m"]
 [ext_resource type="Texture2D" uid="uid://ce0h1qft1p833" path="res://aseets/3d/Tanah.png" id="8_y3jn2"]
+[ext_resource type="Texture2D" uid="uid://ctijod3im0tbj" path="res://aseets/Sprites/Rumah/Rumah Depan.png" id="9_a0bac"]
 [ext_resource type="Shader" uid="uid://bi3o8elbtqoni" path="res://addons/simplegrasstextured/shaders/grass.gdshader" id="9_jsnws"]
 [ext_resource type="Texture2D" uid="uid://c4ggdp0kg5wjk" path="res://addons/simplegrasstextured/textures/grassbushcc008.png" id="10_f345f"]
 [ext_resource type="ArrayMesh" uid="uid://sptcpdx6wtm8" path="res://addons/simplegrasstextured/default_mesh.tres" id="11_bqa5m"]
 [ext_resource type="Script" uid="uid://2juaclm8gc1n" path="res://addons/simplegrasstextured/grass.gd" id="12_a0bac"]
 [ext_resource type="AudioStream" uid="uid://jsncshu353d6" path="res://aseets/music/freesound_community-pixel-song-17-60937.mp3" id="13_f345f"]
+[ext_resource type="PackedScene" uid="uid://ra7fqko6x0r5" path="res://scene/lubang.tscn" id="16_tmyho"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_emkrx"]
 albedo_texture = ExtResource("2_w4qq1")
@@ -81,7 +84,7 @@ texture_filter = 0
 [sub_resource type="BoxMesh" id="BoxMesh_bhw8c"]
 size = Vector3(640.4878, 1, 6.2165527)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_f345f"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hnm4a"]
 render_priority = 0
 shader = ExtResource("9_jsnws")
 shader_parameter/albedo = Color(1, 1, 1, 1)
@@ -118,7 +121,7 @@ buffer = PackedFloat32Array(0.964337, 0, -0.26467755, 1.2032912, 0, 1, 0, -1.280
 [node name="world" type="Node3D" unique_id=1778774369]
 
 [node name="player" parent="." unique_id=1492406720 groups=["player"] instance=ExtResource("1_pjass")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.98568, -0.42144027, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6355762, -0.42144027, 1.2452322)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=163722433]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0099869, -1.7802718, -24.550339)
@@ -190,6 +193,36 @@ transform = Transform3D(10.865, 0, 0, 0, 10.865, 0, 0, 0, 10.865, 0, 1, -6)
 texture_filter = 0
 texture = ExtResource("7_hcb8y")
 
+[node name="Sprite3D6" type="Sprite3D" parent="RUMAH" unique_id=1069068388]
+transform = Transform3D(10.865, 0, 0, 0, 10.865, 0, 0, 0, 10.865, 9.593749, 1, -10.764317)
+texture_filter = 0
+texture = ExtResource("8_bqa5m")
+
+[node name="Sprite3D7" type="Sprite3D" parent="RUMAH" unique_id=1286074512]
+transform = Transform3D(10.865, 0, 0, 0, 10.865, 0, 0, 0, 10.865, 31.09719, 1, -10.764317)
+texture_filter = 0
+texture = ExtResource("8_bqa5m")
+
+[node name="Sprite3D8" type="Sprite3D" parent="RUMAH" unique_id=1605422645]
+transform = Transform3D(10.865, 0, 0, 0, 10.865, 0, 0, 0, 10.865, 55.712475, 1, -10.764317)
+texture_filter = 0
+texture = ExtResource("8_bqa5m")
+
+[node name="Sprite3D9" type="Sprite3D" parent="RUMAH" unique_id=2082372868]
+transform = Transform3D(10.865, 0, 0, 0, 10.865, 0, 0, 0, 10.865, 19.569096, 1, -15.297005)
+texture_filter = 0
+texture = ExtResource("9_a0bac")
+
+[node name="Sprite3D11" type="Sprite3D" parent="RUMAH" unique_id=1174393959]
+transform = Transform3D(10.865, 0, 0, 0, 10.865, 0, 0, 0, 10.865, 41.384216, 1, -14.765084)
+texture_filter = 0
+texture = ExtResource("9_a0bac")
+
+[node name="Sprite3D10" type="Sprite3D" parent="RUMAH" unique_id=1681503846]
+transform = Transform3D(10.865, 0, 0, 0, 10.865, 0, 0, 0, 10.865, -6.2001877, 1, -9.379978)
+texture_filter = 0
+texture = ExtResource("9_a0bac")
+
 [node name="Sprite3D2" type="Sprite3D" parent="RUMAH" unique_id=430388488]
 transform = Transform3D(10.865, 0, 0, 0, 10.865, 0, 0, 0, 10.865, 18.11686, 1, -6)
 texture_filter = 0
@@ -228,7 +261,7 @@ material_override = SubResource("StandardMaterial3D_yur6x")
 mesh = SubResource("BoxMesh_bhw8c")
 
 [node name="SimpleGrassTextured" type="MultiMeshInstance3D" parent="." unique_id=1932572455]
-material_override = SubResource("ShaderMaterial_f345f")
+material_override = SubResource("ShaderMaterial_hnm4a")
 multimesh = SubResource("MultiMesh_hnm4a")
 script = ExtResource("12_a0bac")
 sgt_radius = 2.0
@@ -253,3 +286,8 @@ metadata/SimpleGrassTextured = "2.0.5"
 stream = ExtResource("13_f345f")
 volume_db = 26.916
 autoplay = true
+
+[node name="lubang" type="Node3D" parent="." unique_id=1000099294]
+
+[node name="lubang" parent="lubang" unique_id=998918839 instance=ExtResource("16_tmyho")]
+transform = Transform3D(5.37, 0, 0, 0, 0.94154376, 5.2868133, 0, -5.2868133, 0.94154376, 22.792917, -1.0176908, 4.632248)
