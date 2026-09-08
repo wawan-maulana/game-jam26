@@ -224,7 +224,7 @@ transform = Transform3D(-0.6749472, 0, -6.9573374, 0, 6.99, 0, 6.9573374, 0, -0.
 transform = Transform3D(-0.6749472, 0, -6.9573374, 0, 6.99, 0, 6.9573374, 0, -0.6749472, 1.7664742, -0.7295422, 1.0199418)
 
 [node name="peringkat" type="Sprite3D" parent="object" unique_id=477650813]
-transform = Transform3D(6.99, 0, 0, 0, 6.99, 0, 0, 0, 6.99, -3.1757784, -0.54638904, 0.06441212)
+transform = Transform3D(6.99, 0, 0, 0, 6.99, 0, 0, 0, 6.99, -3.1757784, -0.8400324, 0.06441212)
 texture_filter = 0
 texture = ExtResource("4_hcb8y")
 
@@ -378,5 +378,6 @@ texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_bhw8c")
 animation = &"Run"
 autoplay = "Run"
+frame_progress = 0.79498845
 script = ExtResource("18_e4vd1")
 player = NodePath("../player")
