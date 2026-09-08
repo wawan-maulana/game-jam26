@@ -1,3 +1,26 @@
 [gd_scene format=3 uid="uid://qgmutt8vusxe"]
 
+[ext_resource type="Texture2D" uid="uid://dsdc0ubtehkcj" path="res://aseets/land_0003.png" id="1_fhoep"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4btvs"]
+albedo_texture = ExtResource("1_fhoep")
+uv1_scale = Vector3(200, 200, 200)
+texture_filter = 0
+
+[sub_resource type="BoxMesh" id="BoxMesh_v8ol4"]
+size = Vector3(195.6616, 1, 184.35054)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_rhxxf"]
+data = PackedVector3Array(-97.830795, 0.5, 92.1753, 97.830795, 0.5, 92.1753, -97.830795, -0.5, 92.1753, 97.830795, 0.5, 92.1753, 97.830795, -0.5, 92.1753, -97.830795, -0.5, 92.1753, 97.830795, 0.5, -92.1753, -97.830795, 0.5, -92.1753, 97.830795, -0.5, -92.1753, -97.830795, 0.5, -92.1753, -97.830795, -0.5, -92.1753, 97.830795, -0.5, -92.1753, 97.830795, 0.5, 92.1753, 97.830795, 0.5, -92.1753, 97.830795, -0.5, 92.1753, 97.830795, 0.5, -92.1753, 97.830795, -0.5, -92.1753, 97.830795, -0.5, 92.1753, -97.830795, 0.5, -92.1753, -97.830795, 0.5, 92.1753, -97.830795, -0.5, -92.1753, -97.830795, 0.5, 92.1753, -97.830795, -0.5, 92.1753, -97.830795, -0.5, -92.1753, 97.830795, 0.5, 92.1753, -97.830795, 0.5, 92.1753, 97.830795, 0.5, -92.1753, -97.830795, 0.5, 92.1753, -97.830795, 0.5, -92.1753, 97.830795, 0.5, -92.1753, -97.830795, -0.5, 92.1753, 97.830795, -0.5, 92.1753, -97.830795, -0.5, -92.1753, 97.830795, -0.5, 92.1753, 97.830795, -0.5, -92.1753, -97.830795, -0.5, -92.1753)
+
 [node name="MainMenu" type="Node3D" unique_id=2003811831]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1096748106]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0099869, -1.7802718, -24.550339)
+material_override = SubResource("StandardMaterial3D_4btvs")
+mesh = SubResource("BoxMesh_v8ol4")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D" unique_id=1819832638]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D" unique_id=1634628343]
+shape = SubResource("ConcavePolygonShape3D_rhxxf")
